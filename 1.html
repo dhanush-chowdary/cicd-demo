@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>My ChatApp</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#">New Chat</a></li>
+          <li><a href="#">Chats</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="chat-panel">
+      <header class="chat-header">
+        <h2>Conversation</h2>
+      </header>
+      <div class="chat-messages">
+        <!-- chat history goes here -->
+        <div class="message user"><span>You:</span> Hello!</div>
+        <div class="message bot"><span>Bot:</span> Hi there, how can I help?</div>
+      </div>
+      <footer class="chat-input">
+        <textarea placeholder="Type your message…"></textarea>
+        <button>Send</button>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
