@@ -3,37 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chat App</title>
+  <title>MindFuel | Focus. Grow. Achieve.</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <h1>My ChatApp</h1>
+  <header>
+    <h1>🌱 MindFuel</h1>
+    <p class="tagline">Focus. Grow. Achieve.</p>
+  </header>
+
+  <main>
+    <!-- Motivation Section -->
+    <section class="card">
+      <h2>✨ Daily Motivation</h2>
+      <p id="quote">Click below for your daily dose of motivation.</p>
+      <button onclick="generateQuote()">New Quote</button>
+    </section>
+
+    <!-- Focus Timer Section -->
+    <section class="card">
+      <h2>⏱ Focus Timer</h2>
+      <div id="timer">25:00</div>
+      <div class="timer-controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
       </div>
-      <nav class="sidebar-nav">
-        <ul>
-          <li><a href="#">New Chat</a></li>
-          <li><a href="#">Chats</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="chat-panel">
-      <header class="chat-header">
-        <h2>Conversation</h2>
-      </header>
-      <div class="chat-messages">
-        <!-- chat history goes here -->
-        <div class="message user"><span>You:</span> Hello!</div>
-        <div class="message bot"><span>Bot:</span> Hi there, how can I help?</div>
-      </div>
-      <footer class="chat-input">
-        <textarea placeholder="Type your message…"></textarea>
-        <button>Send</button>
-      </footer>
-    </main>
-  </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="card">
+      <h2>🎯 Your Goals</h2>
+      <input type="text" id="goalInput" placeholder="Enter a goal..." />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤ for dreamers, doers & learners.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
